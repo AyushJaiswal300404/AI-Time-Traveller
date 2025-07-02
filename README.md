@@ -27,10 +27,11 @@ This web-based app lets you have intelligent conversations with 9 iconic histori
 AI-Time-Traveller/
 ├── backend/             # Node.js + Gemini API backend
 │   ├── index.js
-│   ├
 ├── public/              # Frontend files
 │   ├── index.html
+│   ├── chat.html
 │   ├── style.css
+│   ├── script.js
 |── .env                # Your Gemini API key here
 ├── package.json
 └── README.md
@@ -40,7 +41,7 @@ AI-Time-Traveller/
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** HTML, CSS, JavaScript,
 - **Backend:** Node.js, Express.js
 - **AI API:** Google Gemini (`@google/generative-ai`)
 - **Other Tools:** dotenv, cors, nodemon
@@ -67,7 +68,7 @@ AI-Time-Traveller/
 ### 1. Clone this repo
 
 ```bash
-git clone 
+git clone https://github.com/AyushJaiswal300404/AI-Time-Traveller
 cd ai-time-traveller
 ```
 
