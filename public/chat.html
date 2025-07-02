@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat with a Legend</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fef3c7, #fde68a); 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1, h2 {
+      font-family: 'Georgia', serif;
+    }
+    #chatBox {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center text-gray-800 px-4">
+
+  <div class="w-full max-w-2xl bg-white rounded-2xl shadow-2xl p-6">
+    <h2 id="characterName" class="text-3xl font-bold text-center text-yellow-700 mb-6">Talking to...</h2>
+
+    <div id="chatBox" class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 h-96 overflow-y-auto mb-6 space-y-2 text-sm">
+      <!-- Chat messages will go here -->
+    </div>
+
+    <form id="chatForm" class="flex gap-3">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Ask a question..."
+        required
+        class="flex-1 px-4 py-2 border border-yellow-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      />
+      <button
+        type="submit"
+        class="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-6 py-2 rounded-xl transition"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+
+  <script>
+    const character = localStorage.getItem("selectedCharacter");
+    document.getElementById("characterName").textContent = `You are now talking to ${character}`;
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
