@@ -13,7 +13,7 @@ This web-based app lets you have intelligent conversations with 9 iconic histori
 
 ## ✨ Features
 
-- 💬 Chat with famous figures like Einstein, Marie Curie, Vivekananda, and Anne Frank.
+- 💬 Chat with famous figures like Gandhi, Marie Curie, Vivekananda, and Anne Frank.
 - 🧠 Character-specific responses using Google Gemini API.
 - ⚡ Powered by Gemini 1.5 Flash for fast, smart answers.
 - 🎨 Clean frontend using HTML, CSS, and JavaScript.
@@ -41,7 +41,7 @@ AI-Time-Traveller/
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript,
+- **Frontend:** HTML, CSS, JavaScript, Tailwind CSS
 - **Backend:** Node.js, Express.js
 - **AI API:** Google Gemini (`@google/generative-ai`)
 - **Other Tools:** dotenv, cors, nodemon
@@ -107,7 +107,7 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 💡 Inspiration
 
-Inspired by the idea of blending history, AI, and fun — to reimagine how we learn from the past.
+Inspired by the idea ofinterest in history and AI — to reimagine how we learn from the past.
 
 ---
 
